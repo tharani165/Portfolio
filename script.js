@@ -49,7 +49,7 @@ window.addEventListener('mousemove', e => {
 
 /* â”€â”€ REVEAL ON SCROLL â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 const revObs = new IntersectionObserver(entries => {
-  entries.forEach(en => { if (en.isIntersecting) { en.target.classList.add('in'); revObs.unobserve(en.target); }});
+  entries.forEach(en => { if (en.isIntersecting) { en.target.classList.add('in'); revObs.unobserve(en.target); } });
 }, { threshold: 0.09 });
 document.querySelectorAll('.reveal').forEach(el => revObs.observe(el));
 
@@ -138,16 +138,16 @@ skillCategories.forEach((cat, ci) => {
 /* â”€â”€ PROJECTS DATA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 const projects = [
   {
-    id:'fred', cat:'data', catLabel:'Data Engineering· ETL Platform', year:'2025',
-    title:'FRED Macroeconomic ETL Platform',
-    subtitle:'Config-driven ingestion of macroeconomic datasets into PostgreSQL.',
-    desc:'Python ETL platform that automates ingestion of US Treasury macroeconomic data from the FRED API. Fetch/Validate/Load architecture with parallel execution, schema drift detection, idempotent upserts, and Prefect 3 orchestration.',
-    tags:['Python','Pandas','PostgreSQL','Prefect 3','REST API','NumPy'],
-    kpis:[{l:'4 Pipelines',c:'orange'},{l:'Parallel Exec',c:'cyan'},{l:'Idempotent',c:'violet'},{l:'Config-Driven',c:'green'}],
-    problem:'Macroeconomic datasets update frequently and have inconsistent schemas over time. Manual ingestion is error-prone, non-reproducible, and cannot handle pagination, retries, or schema changes without breaking downstream analytics.',
-    solution:'A Python ETL platform structured around a Fetch/Validate/Load architecture. Each of the four pipelines â€” Securities Outstanding, Auction Results, Upcoming Auctions, and Buyback Operations â€” is independently deployable and config-driven. Parallel execution via ThreadPoolExecutor improves throughput. Idempotent upserts ensure safe re-runs without duplicating data.',
-    metrics:[{k:'4',l:'Pipelines'},{k:'Parallel',l:'ThreadPoolExecutor'},{k:'Idempotent',l:'Upserts'}],
-    features:[
+    id: 'fred', cat: 'data', catLabel: 'Data Engineering· ETL Platform', year: '2025',
+    title: 'FRED Macroeconomic ETL Platform',
+    subtitle: 'Config-driven ingestion of macroeconomic datasets into PostgreSQL.',
+    desc: 'Python ETL platform that automates ingestion of US Treasury macroeconomic data from the FRED API. Fetch/Validate/Load architecture with parallel execution, schema drift detection, idempotent upserts, and Prefect 3 orchestration.',
+    tags: ['Python', 'Pandas', 'PostgreSQL', 'Prefect 3', 'REST API', 'NumPy'],
+    kpis: [{ l: '4 Pipelines', c: 'orange' }, { l: 'Parallel Exec', c: 'cyan' }, { l: 'Idempotent', c: 'violet' }, { l: 'Config-Driven', c: 'green' }],
+    problem: 'Macroeconomic datasets update frequently and have inconsistent schemas over time. Manual ingestion is error-prone, non-reproducible, and cannot handle pagination, retries, or schema changes without breaking downstream analytics.',
+    solution: 'A Python ETL platform structured around a Fetch/Validate/Load architecture. Each of the four pipelines â€” Securities Outstanding, Auction Results, Upcoming Auctions, and Buyback Operations â€” is independently deployable and config-driven. Parallel execution via ThreadPoolExecutor improves throughput. Idempotent upserts ensure safe re-runs without duplicating data.',
+    metrics: [{ k: '4', l: 'Pipelines' }, { k: 'Parallel', l: 'ThreadPoolExecutor' }, { k: 'Idempotent', l: 'Upserts' }],
+    features: [
       'Config-driven ingestion new endpoints added via configuration, not code changes',
       'Metadata-driven architecture with schema drift validation on every run',
       'Parallel fetch execution using ThreadPoolExecutor across all four pipelines',
@@ -157,21 +157,21 @@ const projects = [
       'Prefect 3 orchestration for scheduling, observability, and run history',
       'Jupyter/Plotly analytics notebooks for surfacing insights from loaded data'
     ],
-    color1:'#7CC4FF', color2:'#A78BFA'
+    color1: '#7CC4FF', color2: '#A78BFA'
   },
   {
-    id:'traffic', cat:'ai', catLabel:'AI & Computer Vision · Pipeline Automation', year:'2025',
-    title:'AI-Based Traffic Management System',
-    subtitle:'Computer vision vehicle detection feeding adaptive traffic signal control.',
-    desc:'An AI-based traffic management system that ingests live video streams, detects and classifies vehicle events using computer vision, and outputs structured traffic density data to a real-time analytics dashboard for adaptive signal control. Shortlisted at Smart India Hackathon 2024.',
-    github:'https://github.com/tharani165/AI-Based-Traffic-Management',
-    image:'images/traffic.png',
-    tags:['Python','YOLOv5','OpenCV','Firebase','JSON'],
-    kpis:[{l:'SIH 2024',c:'orange'},{l:'Real-Time',c:'cyan'},{l:'Structured Output',c:'violet'},{l:'Firebase',c:''}],
-    problem:'Urban intersections generate continuous, unstructured video data. Extracting structured, actionable traffic metrics from raw video streams requires a reliable detection and processing pipeline, not just a model.',
-    solution:'A Python pipeline that ingests CCTV video streams, runs vehicle detection to extract structured per-lane density metrics, and routes the output to a Firebase Realtime Database for live dashboard consumption. The focus was on data flow architecture: reliable ingestion, structured transformation, and consistent output — the detection model is one component in a larger processing system.',
-    metrics:[{k:'Real-Time',l:'Structured output'},{k:'4 Classes',l:'Vehicle types'},{k:'SIH 2024',l:'Shortlisted'}],
-    features:[
+    id: 'traffic', cat: 'ai', catLabel: 'AI & Computer Vision · Pipeline Automation', year: '2025',
+    title: 'AI-Based Traffic Management System',
+    subtitle: 'Computer vision vehicle detection feeding adaptive traffic signal control.',
+    desc: 'An AI-based traffic management system that ingests live video streams, detects and classifies vehicle events using computer vision, and outputs structured traffic density data to a real-time analytics dashboard for adaptive signal control. Shortlisted at Smart India Hackathon 2024.',
+    github: 'https://github.com/tharani165/AI-Based-Traffic-Management',
+    image: 'images/traffic.png',
+    tags: ['Python', 'YOLOv5', 'OpenCV', 'Firebase', 'JSON'],
+    kpis: [{ l: 'SIH 2024', c: 'orange' }, { l: 'Real-Time', c: 'cyan' }, { l: 'Structured Output', c: 'violet' }, { l: 'Firebase', c: '' }],
+    problem: 'Urban intersections generate continuous, unstructured video data. Extracting structured, actionable traffic metrics from raw video streams requires a reliable detection and processing pipeline, not just a model.',
+    solution: 'A Python pipeline that ingests CCTV video streams, runs vehicle detection to extract structured per-lane density metrics, and routes the output to a Firebase Realtime Database for live dashboard consumption. The focus was on data flow architecture: reliable ingestion, structured transformation, and consistent output — the detection model is one component in a larger processing system.',
+    metrics: [{ k: 'Real-Time', l: 'Structured output' }, { k: '4 Classes', l: 'Vehicle types' }, { k: 'SIH 2024', l: 'Shortlisted' }],
+    features: [
       'Video stream ingestion and frame-by-frame processing pipeline',
       'Vehicle detection and classification to extract structured density data',
       'Per-lane density estimation and metric aggregation',
@@ -180,21 +180,21 @@ const projects = [
       'Emergency vehicle detection with signal pre-emption logic',
       'Structured JSON output format for downstream dashboard consumption'
     ],
-    color1:'#FF6B35', color2:'#FF3D8B'
+    color1: '#FF6B35', color2: '#FF3D8B'
   },
   {
-    id:'medicine', cat:'data', catLabel:'Data Engineering · Workflow Automation', year:'2024',
-    title:'Smart Medicine Dispenser  Reminder Ecosystem',
-    subtitle:'QR-verified prescription backend with automated dispensing workflows.',
-    desc:'Backend-driven healthcare automation system with QR-based prescription verification, automated dose scheduling, caregiver notification workflows, and a Flask REST API for schedule management. IEEE YESIST 2024 international finalist â€” top 3 from batch.',
-    github:'https://github.com/tharani165/Drug-Dispenser',
-    image:'images/DrugD.png',    
-    tags:['Python','Flask','REST API','QR Code','JSON DB'],
-    kpis:[{l:'IEEE YESIST 2024',c:'orange'},{l:'Top 3 Team',c:'cyan'},{l:'REST API',c:'violet'},{l:'QR Verified',c:'green'}],
-    problem:'Medication non-adherence is a significant healthcare risk. A reliable system needs to verify the correct prescription is dispensed, schedule doses accurately, and escalate missed doses to caregivers without relying on the patient to actively manage the process.',
-    solution:'A Python/Flask backend handling QR code-based prescription verification, automated dose scheduling, and escalation logic for missed doses via SMS/email caregiver notifications. A JSON-based prescription database tracks prescription state and maintains an audit trail. The REST API enables external integrations and schedule updates without modifying the core system.',
-    metrics:[{k:'Top 3',l:'Selected among 250+ teams'},{k:'IEEE',l:'YESIST 2024'},{k:'QR',l:'Prescription verification'}],
-    features:[
+    id: 'medicine', cat: 'data', catLabel: 'Data Engineering · Workflow Automation', year: '2024',
+    title: 'Smart Medicine Dispenser  Reminder Ecosystem',
+    subtitle: 'QR-verified prescription backend with automated dispensing workflows.',
+    desc: 'Backend-driven healthcare automation system with QR-based prescription verification, automated dose scheduling, caregiver notification workflows, and a Flask REST API for schedule management. IEEE YESIST 2024 international finalist â€” top 3 from batch.',
+    github: 'https://github.com/tharani165/Drug-Dispenser',
+    image: 'images/DrugD.png',
+    tags: ['Python', 'Flask', 'REST API', 'QR Code', 'JSON DB'],
+    kpis: [{ l: 'IEEE YESIST 2024', c: 'orange' }, { l: 'Top 3 Team', c: 'cyan' }, { l: 'REST API', c: 'violet' }, { l: 'QR Verified', c: 'green' }],
+    problem: 'Medication non-adherence is a significant healthcare risk. A reliable system needs to verify the correct prescription is dispensed, schedule doses accurately, and escalate missed doses to caregivers without relying on the patient to actively manage the process.',
+    solution: 'A Python/Flask backend handling QR code-based prescription verification, automated dose scheduling, and escalation logic for missed doses via SMS/email caregiver notifications. A JSON-based prescription database tracks prescription state and maintains an audit trail. The REST API enables external integrations and schedule updates without modifying the core system.',
+    metrics: [{ k: 'Top 3', l: 'Selected among 250+ teams' }, { k: 'IEEE', l: 'YESIST 2024' }, { k: 'QR', l: 'Prescription verification' }],
+    features: [
       'QR-based prescription verification and patient identity check',
       'Automated dose scheduling engine with configurable intervals',
       'Missed dose detection and escalation to caregiver contacts',
@@ -203,21 +203,21 @@ const projects = [
       'SMS/email notification integration for caregiver alerts',
       'Selected as Top 3 teams for IEEE YESIST 2024 International Competition, Tunisia'
     ],
-    color1:'#00FF94', color2:'#00D4FF'
+    color1: '#00FF94', color2: '#00D4FF'
   },
   {
-    id:'vigilant', cat:'ai', catLabel:'AI & Computer Vision · Edge Systems', year:'2024',
-    title:'Vigilant Edge AI Fall Detection System',
-    subtitle:"Patent-accepted research for wearable-free elder-care fall detection.",
-    desc:'Patent-accepted research project proposing a privacy-preserving fall detection architecture for elder-care environments using RPLIDAR and edge AI. No cloud dependency, no wearable required.',
-    github:'https://github.com/tharani165/Vigilant-Fall-Detection-with-Embedded-LiDAR-Technology',
-    image:'images/fall.png',
-    tags:['RPLIDAR A1','Edge AI','OpenPose','YOLO','OpenCV'],
-    kpis:[{l:'Patent Filed',c:'orange'},{l:'Edge AI',c:'cyan'},{l:'Wearable-Free',c:'violet'},{l:'Privacy-First',c:'green'}],
-    problem:'Fall incidents in elder-care settings often go undetected for critical minutes. Wearables require patient compliance; cloud-based cameras raise privacy concerns and introduce latency.',
-    solution:'A research and innovation proposal for an edge-deployed detection system combining RPLIDAR spatial sensing with on-device inference. Camera activation is event-triggered to preserve privacy. The architecture is designed for zero cloud dependency. Patent application submitted and accepted.',
-    metrics:[{k:'Patent',l:'Application accepted'},{k:'Edge',l:'On-device inference'},{k:'Zero',l:'Cloud dependency'}],
-    features:[
+    id: 'vigilant', cat: 'ai', catLabel: 'AI & Computer Vision · Edge Systems', year: '2024',
+    title: 'Vigilant Edge AI Fall Detection System',
+    subtitle: "Patent-accepted research for wearable-free elder-care fall detection.",
+    desc: 'Patent-accepted research project proposing a privacy-preserving fall detection architecture for elder-care environments using RPLIDAR and edge AI. No cloud dependency, no wearable required.',
+    github: 'https://github.com/tharani165/Vigilant-Fall-Detection-with-Embedded-LiDAR-Technology',
+    image: 'images/fall.png',
+    tags: ['RPLIDAR A1', 'Edge AI', 'OpenPose', 'YOLO', 'OpenCV'],
+    kpis: [{ l: 'Patent Filed', c: 'orange' }, { l: 'Edge AI', c: 'cyan' }, { l: 'Wearable-Free', c: 'violet' }, { l: 'Privacy-First', c: 'green' }],
+    problem: 'Fall incidents in elder-care settings often go undetected for critical minutes. Wearables require patient compliance; cloud-based cameras raise privacy concerns and introduce latency.',
+    solution: 'A research and innovation proposal for an edge-deployed detection system combining RPLIDAR spatial sensing with on-device inference. Camera activation is event-triggered to preserve privacy. The architecture is designed for zero cloud dependency. Patent application submitted and accepted.',
+    metrics: [{ k: 'Patent', l: 'Application accepted' }, { k: 'Edge', l: 'On-device inference' }, { k: 'Zero', l: 'Cloud dependency' }],
+    features: [
       'Wearable-free detection no patient compliance required',
       'Privacy-preserving camera activation on motion event only',
       'On-device edge inference with zero cloud dependency',
@@ -225,82 +225,82 @@ const projects = [
       'Real-time patient monitoring architecture design',
       'Patent application submitted and accepted application number issued'
     ],
-    color1:'#00D4FF', color2:'#7C3AFF'
+    color1: '#00D4FF', color2: '#7C3AFF'
   },
   {
-    id:'caremate', cat:'iot', catLabel:'IoT & Robotics · IoT Systems', year:'2024',
-    title:'CareMate IoT Elder Care Platform',
-    subtitle:'Voice-enabled health monitoring with smart home IoT integration.',
-    desc:'Edge AI elder-care companion system integrating voice interaction, medication reminders, health monitoring, and smart home device control via IoT connectivity.',
-    github:'https://github.com/tharani165/MediBot---Medicine-Reminder-Bot',
-    image:'images/medicine_reminder.png',
-    tags:['Voice Assistant','IoT','Health Monitoring','Flask'],
-    kpis:[{l:'Voice Enabled',c:'orange'},{l:'IoT Connected',c:'cyan'},{l:'Health Monitor',c:'violet'},{l:'Emergency Alert',c:'green'}],
-    problem:'Elderly individuals living alone face risk from medication non-compliance, undetected health events, and isolation. Traditional alert systems require active engagement from the user.',
-    solution:'An edge AI companion platform with natural voice interaction for medication reminders, passive health parameter monitoring, emergency notification to family contacts, and smart home device control â€” all unified in a conversational interface accessible to non-technical users.',
-    metrics:[{k:'Voice',l:'Interaction'},{k:'IoT',l:'Integration'},{k:'Real-Time',l:'Monitoring'}],
-    features:[
+    id: 'caremate', cat: 'iot', catLabel: 'IoT & Robotics · IoT Systems', year: '2024',
+    title: 'CareMate IoT Elder Care Platform',
+    subtitle: 'Voice-enabled health monitoring with smart home IoT integration.',
+    desc: 'Edge AI elder-care companion system integrating voice interaction, medication reminders, health monitoring, and smart home device control via IoT connectivity.',
+    github: 'https://github.com/tharani165/MediBot---Medicine-Reminder-Bot',
+    image: 'images/medicine_reminder.png',
+    tags: ['Voice Assistant', 'IoT', 'Health Monitoring', 'Flask'],
+    kpis: [{ l: 'Voice Enabled', c: 'orange' }, { l: 'IoT Connected', c: 'cyan' }, { l: 'Health Monitor', c: 'violet' }, { l: 'Emergency Alert', c: 'green' }],
+    problem: 'Elderly individuals living alone face risk from medication non-compliance, undetected health events, and isolation. Traditional alert systems require active engagement from the user.',
+    solution: 'An edge AI companion platform with natural voice interaction for medication reminders, passive health parameter monitoring, emergency notification to family contacts, and smart home device control all unified in a conversational interface accessible to non-technical users.',
+    metrics: [{ k: 'Voice', l: 'Interaction' }, { k: 'IoT', l: 'Integration' }, { k: 'Real-Time', l: 'Monitoring' }],
+    features: [
       'Natural language voice interaction and response system',
       'Scheduled medication reminder with escalation logic',
       'Continuous health parameter monitoring with anomaly detection',
       'Emergency notification to family contacts via SMS',
       'Smart home device control through unified voice interface'
     ],
-    color1:'#FF6B35', color2:'#7C3AFF'
+    color1: '#FF6B35', color2: '#7C3AFF'
   },
   {
-    id:'medibot', cat:'iot', catLabel:'IoT & Robotics · Embedded Systems', year:'2024',
-    title:'MediBot Autonomous Medicine Delivery Robot',
-    subtitle:'ESP32-based autonomous navigation for hospital pharmacy logistics.',
-    desc:'ESP32-based autonomous line-following robot for hospital pharmacy-to-ward medicine delivery with IoT cloud monitoring and smart hospital logistics integration.',
-    image:'images/medibot.png',
-    tags:['ESP32','IoT','Line Following','Cloud Monitoring'],
-    kpis:[{l:'Autonomous',c:'orange'},{l:'ESP32 Core',c:'cyan'},{l:'Cloud Monitor',c:'violet'},{l:'Hospital Grade',c:'green'}],
-    problem:'Manual medicine transport in hospitals is time-intensive and error-prone. Staff are diverted from clinical duties to logistics tasks that can be automated.',
-    solution:'An ESP32-powered autonomous robot navigating hospital corridors via line-following, carrying prescription deliveries from pharmacy to wards. Cloud monitoring via IoT integration provides real-time delivery status and route analytics for facility managers.',
-    metrics:[{k:'Autonomous',l:'Navigation'},{k:'IoT',l:'Cloud monitoring'},{k:'ESP32',l:'Controller'}],
-    features:[
+    id: 'medibot', cat: 'iot', catLabel: 'IoT & Robotics · Embedded Systems', year: '2024',
+    title: 'MediBot Autonomous Medicine Delivery Robot',
+    subtitle: 'ESP32-based autonomous navigation for hospital pharmacy logistics.',
+    desc: 'ESP32-based autonomous line-following robot for hospital pharmacy-to-ward medicine delivery with IoT cloud monitoring and smart hospital logistics integration.',
+    image: 'images/medibot.png',
+    tags: ['ESP32', 'IoT', 'Line Following', 'Cloud Monitoring'],
+    kpis: [{ l: 'Autonomous', c: 'orange' }, { l: 'ESP32 Core', c: 'cyan' }, { l: 'Cloud Monitor', c: 'violet' }, { l: 'Hospital Grade', c: 'green' }],
+    problem: 'Manual medicine transport in hospitals is time-intensive and error-prone. Staff are diverted from clinical duties to logistics tasks that can be automated.',
+    solution: 'An ESP32-powered autonomous robot navigating hospital corridors via line-following, carrying prescription deliveries from pharmacy to wards. Cloud monitoring via IoT integration provides real-time delivery status and route analytics for facility managers.',
+    metrics: [{ k: 'Autonomous', l: 'Navigation' }, { k: 'IoT', l: 'Cloud monitoring' }, { k: 'ESP32', l: 'Controller' }],
+    features: [
       'Autonomous line-following navigation with obstacle handling',
       'ESP32-based control with real-time IoT telemetry',
       'Cloud dashboard for delivery status and route monitoring',
       'Prescription confirmation protocol at delivery point',
       'Smart hospital logistics analytics integration'
     ],
-    color1:'#00D4FF', color2:'#00FF94'
+    color1: '#00D4FF', color2: '#00FF94'
   },
   {
-    id:'library', cat:'iot', catLabel:'IoT & Robotics', year:'2024',
-    title:'Intelligent Library Assistance Robot',
-    subtitle:'QR-navigated robotic arm for autonomous book retrieval.',
-    desc:'ESP32 robotic system with QR-based autonomous navigation and a computer vision-guided robotic arm for intelligent book retrieval and inventory management.',
-    github:'https://github.com/tharani165/Intelligent-Library-Assistance-Bot',
-    image:'images/libbot.png',
-    tags:['ESP32','OpenCV','QR Navigation','Servo Control'],
-    kpis:[{l:'QR Navigation',c:'orange'},{l:'Robotic Arm',c:'cyan'},{l:'CV Guided',c:'violet'},{l:'Inventory',c:'green'}],
-    problem:'Library staff spend disproportionate time retrieving specific books from large collections. Manual inventory updates are slow and error-prone under high request volumes.',
-    solution:'A robotic system using OpenCV-based QR code navigation for precise positioning between shelving rows, while a servo-driven robotic arm handles book pick-and-place operations. Inventory database updates automatically upon each retrieval.',
-    metrics:[{k:'QR',l:'Navigation system'},{k:'CV',l:'Arm guidance'},{k:'Auto',l:'Inventory sync'}],
-    features:[
+    id: 'library', cat: 'iot', catLabel: 'IoT & Robotics', year: '2024',
+    title: 'Intelligent Library Assistance Robot',
+    subtitle: 'QR-navigated robotic arm for autonomous book retrieval.',
+    desc: 'ESP32 robotic system with QR-based autonomous navigation and a computer vision-guided robotic arm for intelligent book retrieval and inventory management.',
+    github: 'https://github.com/tharani165/Intelligent-Library-Assistance-Bot',
+    image: 'images/libbot.png',
+    tags: ['ESP32', 'OpenCV', 'QR Navigation', 'Servo Control'],
+    kpis: [{ l: 'QR Navigation', c: 'orange' }, { l: 'Robotic Arm', c: 'cyan' }, { l: 'CV Guided', c: 'violet' }, { l: 'Inventory', c: 'green' }],
+    problem: 'Library staff spend disproportionate time retrieving specific books from large collections. Manual inventory updates are slow and error-prone under high request volumes.',
+    solution: 'A robotic system using OpenCV-based QR code navigation for precise positioning between shelving rows, while a servo-driven robotic arm handles book pick-and-place operations. Inventory database updates automatically upon each retrieval.',
+    metrics: [{ k: 'QR', l: 'Navigation system' }, { k: 'CV', l: 'Arm guidance' }, { k: 'Auto', l: 'Inventory sync' }],
+    features: [
       'QR-code based autonomous navigation to precise shelf coordinates',
       'Computer vision-guided robotic arm for book retrieval',
       'Automated inventory database synchronisation per transaction',
       'Multi-book request queue management'
     ],
-    color1:'#7C3AFF', color2:'#FF6B35'
+    color1: '#7C3AFF', color2: '#FF6B35'
   },
   {
-    id:'gps', cat:'iot', catLabel:'IoT & Robotics · Smart Infrastructure', year:'2023',
-    title:'GPS Power Theft Detection System',
-    subtitle:'IEEE-published embedded system for real-time grid anomaly detection.',
-    github:'https://github.com/tharani165/GPS-based-power-theft-detection-and-alert-system-using-GSM',
-    image:'images/power theft.png',
-    desc:'IEEE conference-published smart grid monitoring solution. Arduino-based ACS712 current sensing with GPS theft localisation and GSM instant alert dispatch. Functional hardware prototype validated.',
-    tags:['Arduino UNO','GSM','GPS','ACS712','Embedded C'],
-    kpis:[{l:'IEEE Published',c:'orange'},{l:'GPS Tracking',c:'cyan'},{l:'GSM Alerts',c:'violet'},{l:'Hardware Prototype',c:'green'}],
-    problem:'Electricity theft causes significant infrastructure revenue loss and grid instability globally. Manual detection is reactive, slow, and cannot pinpoint theft location in real time.',
-    solution:'An embedded system integrating an ACS712 current sensor to detect consumption anomalies, GPS to identify theft location, and a GSM module to dispatch instant SMS alerts to utility operators. A relay module enables automatic power isolation. Hardware prototype validated under simulated theft scenarios. Published as an IEEE conference paper.',
-    metrics:[{k:'IEEE',l:'Conference published'},{k:'Real-Time',l:'Anomaly detection'},{k:'GPS',l:'Theft localisation'}],
-    features:[
+    id: 'gps', cat: 'iot', catLabel: 'IoT & Robotics · Smart Infrastructure', year: '2023',
+    title: 'GPS Power Theft Detection System',
+    subtitle: 'IEEE-published embedded system for real-time grid anomaly detection.',
+    github: 'https://github.com/tharani165/GPS-based-power-theft-detection-and-alert-system-using-GSM',
+    image: 'images/power theft.png',
+    desc: 'IEEE conference-published smart grid monitoring solution. Arduino-based ACS712 current sensing with GPS theft localisation and GSM instant alert dispatch. Functional hardware prototype validated.',
+    tags: ['Arduino UNO', 'GSM', 'GPS', 'ACS712', 'Embedded C'],
+    kpis: [{ l: 'IEEE Published', c: 'orange' }, { l: 'GPS Tracking', c: 'cyan' }, { l: 'GSM Alerts', c: 'violet' }, { l: 'Hardware Prototype', c: 'green' }],
+    problem: 'Electricity theft causes significant infrastructure revenue loss and grid instability globally. Manual detection is reactive, slow, and cannot pinpoint theft location in real time.',
+    solution: 'An embedded system integrating an ACS712 current sensor to detect consumption anomalies, GPS to identify theft location, and a GSM module to dispatch instant SMS alerts to utility operators. A relay module enables automatic power isolation. Hardware prototype validated under simulated theft scenarios. Published as an IEEE conference paper.',
+    metrics: [{ k: 'IEEE', l: 'Conference published' }, { k: 'Real-Time', l: 'Anomaly detection' }, { k: 'GPS', l: 'Theft localisation' }],
+    features: [
       'Real-time current anomaly detection via ACS712 sensor',
       'GPS-enabled theft location identification',
       'GSM-based instant SMS alert to utility operations centre',
@@ -308,7 +308,7 @@ const projects = [
       'LCD local status display with buzzer notification',
       'IEEE conference paper peer-reviewed and published'
     ],
-    color1:'#00FF94', color2:'#00D4FF'
+    color1: '#00FF94', color2: '#00D4FF'
   }
 ];
 
@@ -450,7 +450,7 @@ function projThumb(p) {
 }
 
 function tagColor(c) {
-  const m = { orange:'tag-orange', cyan:'tag-cyan', violet:'tag-violet', green:'tag-green' };
+  const m = { orange: 'tag-orange', cyan: 'tag-cyan', violet: 'tag-violet', green: 'tag-green' };
   return 'tag ' + (m[c] || '');
 }
 
@@ -479,7 +479,7 @@ function renderProjects(filter = 'all') {
       </div>`;
     const open = () => openModal(p);
     card.addEventListener('click', open);
-    card.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); }});
+    card.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); } });
     grid.appendChild(card);
     requestAnimationFrame(() => revObs.observe(card));
   });
@@ -553,12 +553,12 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal()
 
 /* â”€â”€ CERTIFICATIONS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 const certs = [
-  { org:'Google', title:'Data Analytics Professional Certificate', date:'Feb 2025' },
-  { org:'IBM', title:'Python for Data Science & AI', date:'Nov 2024' },
-  { org:'Coursera', title:'SQL for Data Science', date:'Aug 2024' },
-  { org:'Microsoft', title:'Power BI Data Analyst Associate', date:'May 2024' },
-  { org:'AWS', title:'Cloud Practitioner Essentials', date:'Mar 2024' },
-  { org:'NPTEL', title:'IoT & Embedded Systems', date:'Dec 2023' }
+  { org: 'Google', title: 'Data Analytics Professional Certificate', date: 'Feb 2025' },
+  { org: 'IBM', title: 'Python for Data Science & AI', date: 'Nov 2024' },
+  { org: 'Coursera', title: 'SQL for Data Science', date: 'Aug 2024' },
+  { org: 'Microsoft', title: 'Power BI Data Analyst Associate', date: 'May 2024' },
+  { org: 'AWS', title: 'Cloud Practitioner Essentials', date: 'Mar 2024' },
+  { org: 'NPTEL', title: 'IoT & Embedded Systems', date: 'Dec 2023' }
 ];
 const certGrid = document.getElementById('certGrid');
 const badgeSVG = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="m9 14-2 8 5-3 5 3-2-8"/></svg>`;
@@ -586,7 +586,7 @@ document.getElementById('contactForm').addEventListener('submit', async e => {
   const action = e.target.action;
   if (action && !action.includes('YOUR_FORMSPREE_ID')) {
     try {
-      const res = await fetch(action, { method:'POST', body:new FormData(e.target), headers:{'Accept':'application/json'} });
+      const res = await fetch(action, { method: 'POST', body: new FormData(e.target), headers: { 'Accept': 'application/json' } });
       if (res.ok) {
         note.innerHTML = '<span class="form-note-dot" style="background:var(--a4)"></span>Message sent â€” I\'ll reply within 24h';
         e.target.reset();
