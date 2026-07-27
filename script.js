@@ -592,7 +592,7 @@ document.getElementById('contactForm').addEventListener('submit', async e => {
         e.target.reset();
       } else { throw new Error(); }
     } catch {
-      note.innerHTML = '<span class="form-note-dot" style="background:var(--a1)"></span>Something went wrong â€” please email directly';
+      note.innerHTML = '<span class="form-note-dot" style="background:var(--a1)"></span>Something went wrong please email directly';
     }
   } else {
     note.innerHTML = '<span class="form-note-dot" style="background:var(--a4)"></span>Connect Formspree for live form submissions';

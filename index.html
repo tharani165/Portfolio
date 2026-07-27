@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<!-- SEO -->
-<title>Tharani Ravi — Data Engineer · Python Developer · ETL & Data Platform Engineer · Chennai</title>
-<meta name="description" content="Tharani Ravi — ECE graduate building a career in Data Engineering. Hands-on ETL pipeline development, Python automation, REST API integration, and analytics-ready data platforms. Based in Chennai, India."/>
-<meta name="keywords" content="Data Engineer Portfolio, ETL Pipeline, Python Developer, Data Engineering Projects, FRED Macroeconomic ETL, REST API Integration, Data Validation, PostgreSQL, Pandas, FastAPI"/>
-<meta name="author" content="Tharani Ravi"/>
-<meta name="robots" content="index, follow"/>
-<meta name="theme-color" content="#050507"/>
-<!-- Open Graph -->
-<meta property="og:type" content="website"/>
-<meta property="og:title" content="Tharani Ravi — Data Engineer · Python Developer · ETL & Data Platform Engineer"/>
-<meta property="og:description" content="ECE graduate transitioning into Data Engineering through hands-on ETL pipeline development, Python automation, and analytics-ready data platforms. IEEE-published. Based in Chennai, India."/>
-<meta property="og:url" content="https://tharaniravi.dev"/>
-<meta property="og:image" content="https://tharaniravi.dev/og.png"/>
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="Tharani Ravi — Data Engineer Portfolio"/>
-<meta name="twitter:description" content="ETL Pipelines · Python Developer · Data Engineering · REST API Integration · ECE Graduate"/>
-<!-- Structured Data -->
-<script type="application/ld+json">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- SEO -->
+  <title>Tharani Ravi — Data Engineer · Python Developer · ETL & Data Platform Engineer · Chennai</title>
+  <meta name="description"
+    content="Tharani Ravi — ECE graduate building a career in Data Engineering. Hands-on ETL pipeline development, Python automation, REST API integration, and analytics-ready data platforms. Based in Chennai, India." />
+  <meta name="keywords"
+    content="Data Engineer Portfolio, ETL Pipeline, Python Developer, Data Engineering Projects, FRED Macroeconomic ETL, REST API Integration, Data Validation, PostgreSQL, Pandas, FastAPI" />
+  <meta name="author" content="Tharani Ravi" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#050507" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Tharani Ravi — Data Engineer · Python Developer · ETL & Data Platform Engineer" />
+  <meta property="og:description"
+    content="ECE graduate transitioning into Data Engineering through hands-on ETL pipeline development, Python automation, and analytics-ready data platforms. IEEE-published. Based in Chennai, India." />
+  <meta property="og:url" content="https://tharaniravi.dev" />
+  <meta property="og:image" content="https://tharaniravi.dev/og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Tharani Ravi — Data Engineer Portfolio" />
+  <meta name="twitter:description"
+    content="ETL Pipelines · Python Developer · Data Engineering · REST API Integration · ECE Graduate" />
+  <!-- Structured Data -->
+  <script type="application/ld+json">
 {
   "@context":"https://schema.org",
   "@type":"Person",
@@ -34,487 +39,626 @@
 }
 </script>
 
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@300;400;500&display=swap"
+    rel="stylesheet" />
 
-<link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
 
-<a class="skip-nav" href="#main">Skip to content</a>
+  <a class="skip-nav" href="#main">Skip to content</a>
 
-<!-- PRELOADER -->
-<div class="preloader" id="preloader" aria-hidden="true">
-  <div class="pre-wordmark">TR</div>
-  <div class="pre-bar-wrap" role="progressbar" aria-label="Loading"></div>
-  <div class="pre-sub">Hang on a bit !</div>
-</div>
+  <!-- PRELOADER -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="pre-wordmark">TR</div>
+    <div class="pre-bar-wrap" role="progressbar" aria-label="Loading"></div>
+    <div class="pre-sub">Hang on a bit !</div>
+  </div>
 
-<div class="bg-noise" aria-hidden="true"></div>
-<div class="bg-grid" aria-hidden="true"></div>
-<div class="mouse-aura" id="mouseAura" aria-hidden="true"></div>
-<div class="scroll-progress" id="scrollProgress" role="progressbar" aria-label="Reading progress"></div>
+  <div class="bg-noise" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="mouse-aura" id="mouseAura" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scrollProgress" role="progressbar" aria-label="Reading progress"></div>
 
-<!-- NAVIGATION -->
-<nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
-  <div class="nav-inner">
-    <a class="brand" href="#home" aria-label="Tharani Ravi — Home">
-      <div class="brand-icon" aria-hidden="true">
-        <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-      </div>
-      <span class="brand-name">Tharani Ravi</span>
-    </a>
-    <div class="nav-links" role="list">
-      <a href="#about" role="listitem">About</a>
-      <a href="#skills" role="listitem">Skills</a>
-      <a href="#projects" role="listitem">Projects</a>
-      <a href="#research" role="listitem">Research</a>
-      <a href="#experience" role="listitem">Experience</a>
-      <a href="#beyond" role="listitem">Beyond</a>
-      <a href="#contact" role="listitem">Contact</a>
-    </div>
-    <div class="nav-right">
-      <button class="theme-btn" id="themeToggle" aria-label="Toggle colour theme">
-        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-      </button>
-      <a href="docs/Resume.pdf" class="nav-cta" target="_blank" aria-label="Download Resume">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
-        Resume
+  <!-- NAVIGATION -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a class="brand" href="#home" aria-label="Tharani Ravi — Home">
+        <div class="brand-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+          </svg>
+        </div>
+        <span class="brand-name">Tharani Ravi</span>
       </a>
-      <button class="burger-btn" id="burgerBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </div>
-</nav>
-
-<div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobile navigation">
-  <a href="#about">About</a>
-  <a href="#skills">Skills</a>
-  <a href="#projects">Projects</a>
-  <a href="#research">Research</a>
-  <a href="#experience">Experience</a>
-  <a href="#beyond">Beyond</a>
-  <a href="#contact">Contact</a>
-</div>
-
-<main id="main">
-
-<!-- ═══════ HERO ═══════ -->
-<section class="hero" id="home">
-  <div class="container">
-    <div class="hero-grid">
-      <div>
-
-        <h1 class="hero-h1">
-          <span class="row reveal d1">Hi, I'm</span>
-          <span class="row reveal d2"><em>Tharani</em> Ravi.</span>
-        </h1>
-
-        <div class="hero-oneliner reveal d3">
-          <span class="hero-oneliner-text">Data Engineer</span>
-          <span class="hero-oneliner-sep">•</span>
-          <span class="hero-oneliner-text">Python Developer</span>
-          <span class="hero-oneliner-sep">•</span>
-          <span class="hero-oneliner-text">ETL Pipeline Builder</span>
-          <span class="hero-oneliner-sep">•</span>
-          <span class="hero-oneliner-text">ECE Graduate</span>
-        </div>
-
-        <p class="hero-bio reveal d4">
-          <strong>Electronics & Communication Engineering</strong> graduate building a career in Data Engineering through Python. Hands-on experience developing <strong>ETL pipelines</strong>, automated data ingestion systems, and analytics-ready data platforms — applying engineering fundamentals to software systems.
-        </p>
-        <div class="hero-cta reveal d5">
-          <a href="#projects" class="btn btn-primary">
-            View projects
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-          </a>
-          <a href="#contact" class="btn btn-ghost">Get in touch</a>
-        </div>
-        <div class="hero-social reveal d5">
-          <span class="lbl" aria-hidden="true">Find me on</span>
-          <a href="https://www.linkedin.com/in/tharani-ravi-a79646263/" target="_blank" rel="noopener" class="icon-btn" aria-label="LinkedIn profile">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
-          </a>
-          <a href="https://github.com/tharani165" target="_blank" rel="noopener" class="icon-btn" aria-label="GitHub profile">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.5-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg>
-          </a>
-          <a href="mailto:tharaniravithara@gmail.com" class="icon-btn" aria-label="Send email">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
-          </a>
-        </div>
+      <div class="nav-links" role="list">
+        <a href="#about" role="listitem">About</a>
+        <a href="#skills" role="listitem">Skills</a>
+        <a href="#projects" role="listitem">Projects</a>
+        <a href="#research" role="listitem">Research</a>
+        <a href="#experience" role="listitem">Experience</a>
+        <a href="#beyond" role="listitem">Beyond</a>
+        <a href="#contact" role="listitem">Contact</a>
       </div>
-      <div class="reveal d3">
-        <div class="portrait-wrap">
-          <div class="portrait-bg" aria-hidden="true"></div>
-          <div class="portrait-frame">
-            <img class="portrait-img" src="images/image.png" alt="Portrait of Tharani Ravi" onerror="this.style.display='none'"/>
+      <div class="nav-right">
+        <button class="theme-btn" id="themeToggle" aria-label="Toggle colour theme">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            aria-hidden="true">
+            <circle cx="12" cy="12" r="5" />
+            <path
+              d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+          </svg>
+        </button>
+        <a href="docs/Resume.pdf" class="nav-cta" target="_blank" aria-label="Download Resume">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" />
+          </svg>
+          Resume
+        </a>
+        <button class="burger-btn" id="burgerBtn" aria-label="Open menu" aria-expanded="false"
+          aria-controls="mobileMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobile navigation">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#research">Research</a>
+    <a href="#experience">Experience</a>
+    <a href="#beyond">Beyond</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <main id="main">
+
+    <!-- ═══════ HERO ═══════ -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-grid">
+          <div>
+
+            <h1 class="hero-h1">
+              <span class="row reveal d1">Hi, I'm</span>
+              <span class="row reveal d2"><em>Tharani</em> Ravi.</span>
+            </h1>
+
+            <div class="hero-oneliner reveal d3">
+              <span class="hero-oneliner-text">Data Engineer</span>
+              <span class="hero-oneliner-sep">•</span>
+              <span class="hero-oneliner-text">Python Developer</span>
+              <span class="hero-oneliner-sep">•</span>
+              <span class="hero-oneliner-text">ETL Pipeline Builder</span>
+              <span class="hero-oneliner-sep">•</span>
+              <span class="hero-oneliner-text">ECE Graduate</span>
             </div>
-            <div class="portrait-overlay" aria-hidden="true"></div>
-            <span class="portrait-ring" aria-hidden="true"></span>
+
+            <p class="hero-bio reveal d4">
+              <strong>Electronics & Communication Engineering</strong> graduate building a career in Data Engineering
+              through Python. Hands-on experience developing <strong>ETL pipelines</strong>, automated data ingestion
+              systems, and analytics-ready data platforms — applying engineering fundamentals to software systems.
+            </p>
+            <div class="hero-cta reveal d5">
+              <a href="#projects" class="btn btn-primary">
+                View projects
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M5 12h14M13 5l7 7-7 7" />
+                </svg>
+              </a>
+              <a href="#contact" class="btn btn-ghost">Get in touch</a>
+            </div>
+            <div class="hero-social reveal d5">
+              <span class="lbl" aria-hidden="true">Find me on</span>
+              <a href="https://www.linkedin.com/in/tharani-ravi-a79646263/" target="_blank" rel="noopener"
+                class="icon-btn" aria-label="LinkedIn profile">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z" />
+                </svg>
+              </a>
+              <a href="https://github.com/tharani165" target="_blank" rel="noopener" class="icon-btn"
+                aria-label="GitHub profile">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.5-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3" />
+                </svg>
+              </a>
+              <a href="mailto:tharaniravithara@gmail.com" class="icon-btn" aria-label="Send email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <rect x="3" y="5" width="18" height="14" rx="2" />
+                  <path d="m3 7 9 6 9-6" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="reveal d3">
+            <div class="portrait-wrap">
+              <div class="portrait-bg" aria-hidden="true"></div>
+              <div class="portrait-frame">
+                <img class="portrait-img" src="images/image.png" alt="Portrait of Tharani Ravi"
+                  onerror="this.style.display='none'" />
+              </div>
+              <div class="portrait-overlay" aria-hidden="true"></div>
+              <span class="portrait-ring" aria-hidden="true"></span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-  </div>
-</section>
-
-<!-- ═══════ ABOUT ═══════ -->
-<section class="section-pad" id="about" style="border-top:1px solid var(--border)">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow reveal"><span class="dot" aria-hidden="true"></span>About</span>
-      <h2 class="section-h reveal d1">Engineer by training, <em>builder</em> by instinct.</h2>
-    </div>
-    <div class="about-grid">
-      <div class="about-text reveal">
-        <p>My background in <strong>Electronics and Communication Engineering</strong> gave me a foundation in systems thinking, hardware-software integration, and disciplined problem-solving. As I explored software development, I became drawn to Python, automation, and the challenge of building reliable data systems.</p>
-        <p>I enjoy building <strong>ETL pipelines</strong>, scalable data processing workflows, and analytics-ready platforms — applying the same engineering rigour I developed in ECE to software systems. I'm particularly interested in the architecture of data systems: how data flows, how failures are handled, how pipelines stay maintainable as requirements evolve.</p>
-        <div class="about-quote">"Good data engineering is invisible. Clean ingestion, reliable validation, predictable failures — the pipeline just runs."</div>
       </div>
-      <div class="reveal d2">
-        <div class="stat-grid">
-          <div class="stat-card"><div class="num" data-count="7+">0</div><div class="label">Major Engineering Projects</div><div class="sub">Built end-to-end from scratch</div></div>
-          <div class="stat-card"><div class="num" data-count="6">0</div><div class="label">Certifications</div><div class="sub">Industry-recognised</div></div>
-          <div class="stat-card"><div class="num" data-count="2">0</div><div class="label">IEEE Publications</div><div class="sub">Conference + Review</div></div>
-          <div class="stat-card"><div class="num" data-count="1">0</div><div class="label">Patent Filed</div><div class="sub">Application accepted</div></div>
+    </section>
+
+    <!-- ═══════ ABOUT ═══════ -->
+    <section class="section-pad" id="about" style="border-top:1px solid var(--border)">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow reveal"><span class="dot" aria-hidden="true"></span>About</span>
+          <h2 class="section-h reveal d1">Engineer by training, <em>builder</em> by instinct.</h2>
         </div>
-      </div>
-    </div>
-
-    <!-- Highlights -->
-    <div style="margin-top:64px">
-      <span class="eyebrow reveal" style="margin-bottom:28px;display:inline-flex"><span class="dot" aria-hidden="true"></span>Highlights</span>
-      <div class="highlight-stats-row reveal" style="margin-top:28px">
-        <div class="hs-item">
-          <div class="hs-num">2</div>
-          <div class="hs-label">IEEE Publications</div>
-        </div>
-        <div class="hs-item">
-          <div class="hs-num">Top 3</div>
-          <div class="hs-label">IEEE YESIST Finalist</div>
-        </div>
-        <div class="hs-item">
-          <div class="hs-num">8+</div>
-          <div class="hs-label">All Engineering Projects</div>
-        </div>
-        <div class="hs-item">
-          <div class="hs-num">1000+</div>
-          <div class="hs-label">Hours Building</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- ═══════ SKILLS ═══════ -->
-<section class="section-pad" id="skills" style="border-top:1px solid var(--border)">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow reveal"><span class="dot" aria-hidden="true"></span>Technical Skills</span>
-      <h2 class="section-h reveal d1">The <em>toolbox</em> behind the work.</h2>
-      <p class="section-sub reveal d2">Core skills built through hands-on project work — from ETL pipeline development and REST API integration to Python automation and data validation engineering.</p>
-    </div>
-    <div class="skills-grid" id="skillsGrid"></div>
-  </div>
-</section>
-
-
-
-<!-- ═══════ PROJECTS ═══════ -->
-<section class="section-pad" id="projects" style="border-top:1px solid var(--border)">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow reveal"><span class="dot" aria-hidden="true"></span>Engineering Projects</span>
-      <h2 class="section-h reveal d1">Systems that <em>actually run</em>.</h2>
-      <p class="section-sub reveal d2">Projects spanning data engineering, backend automation, and ECE engineering — each built with a focus on architecture, reliability, and clean implementation. Click any card for the full engineering breakdown.</p>
-    </div>
-    <div class="proj-filters reveal" role="group" aria-label="Filter projects by category">
-      <button class="pf-btn active" data-filter="all" aria-pressed="true">All Projects</button>
-      <button class="pf-btn" data-filter="data" aria-pressed="false">Data Engineering</button>
-      <button class="pf-btn" data-filter="ai" aria-pressed="false">AI & Computer Vision</button>
-      <button class="pf-btn" data-filter="iot" aria-pressed="false">IoT & Robotics</button>
-    </div>
-    <div class="proj-grid" id="projGrid"></div>
-  </div>
-</section>
-
-<!-- ═══════ RESEARCH & PUBLICATIONS ═══════ -->
-<section class="section-pad" id="research" style="border-top:1px solid var(--border)">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow reveal"><span class="dot" aria-hidden="true"></span>Engineering Projects &amp; Research</span>
-      <h2 class="section-h reveal d1">Engineering knowledge, <em>published</em>.</h2>
-      <p class="section-sub reveal d2">Peer-reviewed IEEE publications, a patent-accepted innovation in edge AI, and technical literature contributions — demonstrating engineering rigour and problem-solving applied to real-world challenges.</p>
-    </div>
-    <div class="research-grid">
-
-      <!-- IEEE Publication -->
-      <div class="research-card reveal">
-        <div class="research-type ieee">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:12px;height:12px" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="m9 14-2 8 5-3 5 3-2-8"/></svg>
-          IEEE Conference Publication
-        </div>
-        <h3>GPS-Based Power Theft Detection and Alert System Using GSM</h3>
-        <p>A hardware-implemented smart grid monitoring system for real-time electricity theft detection. Integrates ACS712 current sensing, GPS-based theft localisation, and GSM-enabled instant alert dispatch. Validated under simulated theft scenarios with functional hardware prototype.</p>
-        <div class="research-meta">
-          <span class="tag tag-cyan">Arduino UNO</span>
-          <span class="tag tag-orange">ACS712 Current Sensor</span>
-          <span class="tag tag-violet">GPS Module</span>
-          <span class="tag">GSM Module</span>
-          <span class="tag">Embedded C</span>
-          <span class="tag">Relay Module</span>
-        </div>
-        <div class="research-highlights">
-          <div class="r-hl"><span class="r-hl-dot" aria-hidden="true"></span>Real-time current anomaly detection with calibrated threshold tuning</div>
-          <div class="r-hl"><span class="r-hl-dot" aria-hidden="true"></span>GPS-enabled theft location tracking for utility infrastructure response</div>
-          <div class="r-hl"><span class="r-hl-dot" aria-hidden="true"></span>Automatic relay-controlled power isolation on detection event</div>
-          <div class="r-hl"><span class="r-hl-dot" aria-hidden="true"></span>Functional hardware prototype validated under test conditions</div>
-          <div class="r-hl"><span class="r-hl-dot" aria-hidden="true"></span>Published as IEEE conference paper — peer reviewed</div>
-        </div>
-      </div>
-
-      <!-- Patent -->
-      <div class="research-card reveal d1">
-        <div class="research-type patent">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:12px;height:12px" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          Patent Application · Accepted
-        </div>
-        <h3>Vigilant — Wearable-Free Fall Detection System Using Edge AI</h3>
-        <p>A patent-oriented research project proposing a privacy-preserving fall detection architecture for elder-care environments. Submitted for patent consideration with application number granted. The work encompasses full system architecture, technical feasibility analysis, and implementation planning — validated as a novel contribution to edge AI healthcare.</p>
-        <div class="research-meta">
-          <span class="tag tag-orange">RPLIDAR A1</span>
-          <span class="tag tag-cyan">NVIDIA Jetson Nano</span>
-          <span class="tag tag-violet">OpenPose</span>
-          <span class="tag">YOLO</span>
-          <span class="tag">OpenCV</span>
-          <span class="tag">Edge AI</span>
-        </div>
-        <div class="research-highlights">
-          <div class="r-hl"><span class="r-hl-dot" aria-hidden="true"></span>Wearable-free detection eliminates patient compliance barriers</div>
-          <div class="r-hl"><span class="r-hl-dot" aria-hidden="true"></span>Privacy-preserving camera activation — idle until motion event triggered</div>
-          <div class="r-hl"><span class="r-hl-dot" aria-hidden="true"></span>On-device inference architecture — zero cloud dependency</div>
-          <div class="r-hl"><span class="r-hl-dot" aria-hidden="true"></span>Emergency alert generation for caregiver notification</div>
-          <div class="r-hl"><span class="r-hl-dot" aria-hidden="true"></span>Patent application submitted and accepted — application number issued</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════ EXPERIENCE ═══════ -->
-<section class="section-pad" id="experience" style="border-top:1px solid var(--border)">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow reveal"><span class="dot" aria-hidden="true"></span>Trajectory</span>
-      <h2 class="section-h reveal d1">A timeline of <em>building</em>.</h2>
-    </div>
-    <div class="timeline" role="list">
-      <div class="t-item reveal" role="listitem">
-        <div class="t-node" aria-hidden="true"></div>
-        <div class="t-meta">2026 · Present</div>
-        <div class="t-role">Data Analytics &amp; Python Developer Intern</div>
-        <div class="t-org"><strong>Kaar Technologies</strong> · Chennai, India</div>
-        <p class="t-desc">Working on Python-based analytics tooling and data pipeline development for enterprise workflows. Contributed to internal dashboard development, built automation scripts for data processing tasks, and worked on a defect-detection data pipeline integrating with robotic arm control endpoints. Reduced a model retraining data preparation cycle from 4 days to under 6 hours through Python pipeline optimisation.</p>
-        <div class="t-tags"><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Power BI</span><span class="tag">Data Pipelines</span><span class="tag">Automation</span></div>
-      </div>
-      <div class="t-item reveal d3" role="listitem">
-        <div class="t-node" aria-hidden="true"></div>
-        <div class="t-meta">2022 · 2026</div>
-        <div class="t-role">B.E. Electronics &amp; Communication Engineering</div>
-        <div class="t-org">Electives in <strong>AI, Embedded Systems &amp; Signal Processing</strong> · CGPA 8.13</div>
-        <p class="t-desc">Active in the Robotics Club and AI interest group. Multiple inter-departmental paper presentations on embedded systems and IoT. Best Paper recognition at a national-level symposium conducted at Bannari Amman Institute of Technology. ECE foundation underpins the systems-thinking approach applied to software and data engineering work.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- ═══════ CERTIFICATIONS ═══════ -->
-<section class="section-pad" id="certs" style="border-top:1px solid var(--border)">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow reveal"><span class="dot" aria-hidden="true"></span>Credentials</span>
-      <h2 class="section-h reveal d1">Certifications &amp; <em>training</em>.</h2>
-    </div>
-    <div class="cert-grid" id="certGrid"></div>
-  </div>
-</section>
-
-<!-- ═══════ FUN FACTS / BEYOND ENGINEERING ═══════ -->
-<section class="section-pad" id="beyond" style="border-top:1px solid var(--border)">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow reveal"><span class="dot" aria-hidden="true"></span>Beyond Engineering</span>
-      <h2 class="section-h reveal d1">The human behind the <em>pipeline</em>.</h2>
-    </div>
-    <div class="fun-facts-grid">
-      <div class="fun-fact-card reveal">
-        <span class="ff-icon">☕</span>
-        <p class="ff-text">Pipeline debugging speed increases <strong>proportionally with coffee intake</strong>. Current benchmarks are ongoing. Results are consistent.</p>
-      </div>
-      <div class="fun-fact-card reveal d1">
-        <span class="ff-icon">📊</span>
-        <p class="ff-text">Convinced that a well-named variable is worth <strong>three comments and a diagram</strong>. Maintainable code is a form of kindness.</p>
-      </div>
-      <div class="fun-fact-card reveal d2">
-        <span class="ff-icon">📍</span>
-        <p class="ff-text">Based in <strong>Chennai</strong>, building data systems that solve real-world problems — one pipeline, one dataset, one clean schema at a time.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════ FAILURE LOG / LESSONS LEARNED ═══════ -->
-<section class="section-pad" id="lessons" style="border-top:1px solid var(--border)">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow reveal"><span class="dot" aria-hidden="true"></span>Lessons Learned</span>
-      <h2 class="section-h reveal d1">Things that <em>failed</em>, brilliantly.</h2>
-      <p class="section-sub reveal d2">Every data engineer has a graveyard of pipelines that ran perfectly in dev and silently corrupted data in production. Here's mine.</p>
-    </div>
-    <div class="failure-log-wrap reveal">
-      <div class="failure-log-grid">
-        <div class="fl-item">
-          <div class="fl-num">01</div>
-          <div class="fl-body">
-            <div class="fl-title">The Pipeline That Loved Duplicates</div>
-            <div class="fl-desc">Forgot to implement idempotent upserts on the first pass. Re-ran the pipeline after a network timeout. Every row loaded twice. Lesson: always design for safe re-runs from the start, not after discovering duplicates in production.</div>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>My background in <strong>Electronics and Communication Engineering</strong> gave me a foundation in
+              systems thinking, hardware-software integration, and disciplined problem-solving. As I explored software
+              development, I became drawn to Python, automation, and the challenge of building reliable data systems.
+            </p>
+            <p>I enjoy building <strong>ETL pipelines</strong>, scalable data processing workflows, and analytics-ready
+              platforms — applying the same engineering rigour I developed in ECE to software systems. I'm particularly
+              interested in the architecture of data systems: how data flows, how failures are handled, how pipelines
+              stay maintainable as requirements evolve.</p>
+            <div class="about-quote">"Good data engineering is invisible. Clean ingestion, reliable validation,
+              predictable failures — the pipeline just runs."</div>
+          </div>
+          <div class="reveal d2">
+            <div class="stat-grid">
+              <div class="stat-card">
+                <div class="num" data-count="7+">0</div>
+                <div class="label">Major Engineering Projects</div>
+                <div class="sub">Built end-to-end from scratch</div>
+              </div>
+              <div class="stat-card">
+                <div class="num" data-count="6">0</div>
+                <div class="label">Certifications</div>
+                <div class="sub">Industry-recognised</div>
+              </div>
+              <div class="stat-card">
+                <div class="num" data-count="2">0</div>
+                <div class="label">IEEE Publications</div>
+                <div class="sub">Conference + Review</div>
+              </div>
+              <div class="stat-card">
+                <div class="num" data-count="1">0</div>
+                <div class="label">Patent Filed</div>
+                <div class="sub">Application accepted</div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="fl-item">
-          <div class="fl-num">02</div>
-          <div class="fl-body">
-            <div class="fl-title">The Schema That Changed Overnight</div>
-            <div class="fl-desc">An API returned a new field without notice. Downstream Pandas transformations silently dropped it. The data loaded cleanly — with missing columns. Lesson: always validate schema on every run, not just the first one.</div>
-          </div>
-        </div>
-        <div class="fl-item">
-          <div class="fl-num">03</div>
-          <div class="fl-body">
-            <div class="fl-title">The API That Liked Rate Limits</div>
-            <div class="fl-desc">Parallel fetches hit the API rate limit at 2am. No retry logic. The pipeline crashed silently and I woke up to empty tables. Lesson: retry logic and backoff aren't optional in production ETL — they're the pipeline.</div>
-          </div>
-        </div>
-        <div class="fl-item">
-          <div class="fl-num">04</div>
-          <div class="fl-body">
-            <div class="fl-title">Logs That Said Nothing Useful</div>
-            <div class="fl-desc">Built a pipeline, added a single print statement for logging. A failure happened somewhere in the middle. No timestamp, no stage, no context. Lesson: structured logging from the start pays back every time something goes wrong.</div>
+
+        <!-- Highlights -->
+        <div style="margin-top:64px">
+          <span class="eyebrow reveal" style="margin-bottom:28px;display:inline-flex"><span class="dot"
+              aria-hidden="true"></span>Highlights</span>
+          <div class="highlight-stats-row reveal" style="margin-top:28px">
+            <div class="hs-item">
+              <div class="hs-num">2</div>
+              <div class="hs-label">IEEE Publications</div>
+            </div>
+            <div class="hs-item">
+              <div class="hs-num">Top 3</div>
+              <div class="hs-label">IEEE YESIST Finalist</div>
+            </div>
+            <div class="hs-item">
+              <div class="hs-num">8+</div>
+              <div class="hs-label">All Engineering Projects</div>
+            </div>
+            <div class="hs-item">
+              <div class="hs-num">1000+</div>
+              <div class="hs-label">Hours Building</div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="fl-punchline">APIs lie. Schemas drift. Data is never as clean as it looks.<br>That's why I <em>love</em> engineering.</div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- ═══════ CONTACT ═══════ -->
-<section class="section-pad" id="contact" style="border-top:1px solid var(--border)">
-  <div class="container">
-    <div class="section-head" style="max-width:600px;margin-left:auto;margin-right:auto;text-align:center">
-      <span class="eyebrow reveal" style="margin:0 auto"><span class="dot" aria-hidden="true"></span>Get in touch</span>
-      <h2 class="section-h reveal d1">Have an <em>interesting problem?</em></h2>
-      <p class="section-sub reveal d2" style="margin:18px auto 0">Let's build something useful, automate something boring, or teach a machine something new.</p>
-    </div>
-    <div class="contact-inner reveal d1">
-      <div class="form-wrap">
-        <form id="contactForm" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" novalidate>
-          <div class="form-field"><input id="cf-name" name="name" type="text" placeholder="Your name" required autocomplete="name"/></div>
-          <div class="form-field"><input id="cf-email" name="email" type="email" placeholder="Email address" required autocomplete="email"/></div>
-          <div class="form-field"><input id="cf-subject" name="subject" type="text" placeholder="Subject" required/></div>
-          <div class="form-field"><textarea id="cf-message" name="message" placeholder="Message" required></textarea></div>
-          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4z"/></svg>
-            Send Message
-          </button>
-          <div class="form-note" id="formNote" aria-live="polite"><span class="form-note-dot" aria-hidden="true"></span>Usually replies within 24h · IST</div>
-        </form>
-      </div>
-      <div class="contact-aside">
-        <div class="contact-info-card">
-          <h3>Let's talk</h3>
-          <p>Internships, collaborations, or just a chat about computer vision over filter coffee — I'm in. Whether it's a weird hardware project, a healthcare automation idea, or a problem that needs an AI solution, reach out.</p>
+
+    <!-- ═══════ SKILLS ═══════ -->
+    <section class="section-pad" id="skills" style="border-top:1px solid var(--border)">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow reveal"><span class="dot" aria-hidden="true"></span>Technical Skills</span>
+          <h2 class="section-h reveal d1">The <em>toolbox</em> behind the work.</h2>
+          <p class="section-sub reveal d2">Core skills built through hands-on project work — from ETL pipeline
+            development and REST API integration to Python automation and data validation engineering.</p>
         </div>
-        <div class="contact-links">
-          <a href="https://www.linkedin.com/in/tharani-ravi-a79646263/" target="_blank" rel="noopener" class="contact-link" aria-label="LinkedIn profile">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
-            <span class="cl-label">LinkedIn</span>
-            <span class="cl-val">tharani-ravi ↗</span>
-          </a>
-          <a href="https://github.com/tharani165" target="_blank" rel="noopener" class="contact-link" aria-label="GitHub profile">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.5-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg>
-            <span class="cl-label">GitHub</span>
-            <span class="cl-val">github.com/tharani ↗</span>
-          </a>
-          <a href="mailto:tharaniravithara@gmail.com" class="contact-link" aria-label="Send email">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
-            <span class="cl-label">Email</span>
-            <span class="cl-val">tharaniravithara@gmail.com</span>
-          </a>
-        </div>
+        <div class="skills-grid" id="skillsGrid"></div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-</main>
 
-<!-- ═══════ FOOTER ═══════ -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <div class="brand" style="align-items:center">
-          <div class="brand-icon" style="width:30px;height:30px;border-radius:8px" aria-hidden="true">
-            <svg viewBox="0 0 24 24" style="width:16px;height:16px"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+
+    <!-- ═══════ PROJECTS ═══════ -->
+    <section class="section-pad" id="projects" style="border-top:1px solid var(--border)">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow reveal"><span class="dot" aria-hidden="true"></span>Engineering Projects</span>
+          <h2 class="section-h reveal d1">Systems that <em>actually run</em>.</h2>
+          <p class="section-sub reveal d2">Projects spanning data engineering, backend automation, and ECE engineering —
+            each built with a focus on architecture, reliability, and clean implementation. Click any card for the full
+            engineering breakdown.</p>
+        </div>
+        <div class="proj-filters reveal" role="group" aria-label="Filter projects by category">
+          <button class="pf-btn active" data-filter="all" aria-pressed="true">All Projects</button>
+          <button class="pf-btn" data-filter="data" aria-pressed="false">Data Engineering</button>
+          <button class="pf-btn" data-filter="ai" aria-pressed="false">AI & Computer Vision</button>
+          <button class="pf-btn" data-filter="iot" aria-pressed="false">IoT & Robotics</button>
+        </div>
+        <div class="proj-grid" id="projGrid"></div>
+      </div>
+    </section>
+
+    <!-- ═══════ RESEARCH & PUBLICATIONS ═══════ -->
+    <section class="section-pad" id="research" style="border-top:1px solid var(--border)">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow reveal"><span class="dot" aria-hidden="true"></span>Engineering Projects &amp;
+            Research</span>
+          <h2 class="section-h reveal d1">Engineering knowledge, <em>published</em>.</h2>
+          <p class="section-sub reveal d2">Peer-reviewed IEEE publications, a patent-accepted innovation in edge AI, and
+            technical literature contributions — demonstrating engineering rigour and problem-solving applied to
+            real-world challenges.</p>
+        </div>
+        <div class="research-grid">
+
+          <!-- IEEE Publication -->
+          <div class="research-card reveal">
+            <div class="research-type ieee">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:12px;height:12px"
+                aria-hidden="true">
+                <circle cx="12" cy="8" r="6" />
+                <path d="m9 14-2 8 5-3 5 3-2-8" />
+              </svg>
+              IEEE Conference Publication
+            </div>
+            <h3>GPS-Based Power Theft Detection and Alert System Using GSM</h3>
+            <p>A hardware-implemented smart grid monitoring system for real-time electricity theft detection. Integrates
+              ACS712 current sensing, GPS-based theft localisation, and GSM-enabled instant alert dispatch. Validated
+              under simulated theft scenarios with functional hardware prototype.</p>
+            <div class="research-meta">
+              <span class="tag tag-cyan">Arduino UNO</span>
+              <span class="tag tag-orange">ACS712 Current Sensor</span>
+              <span class="tag tag-violet">GPS Module</span>
+              <span class="tag">GSM Module</span>
+              <span class="tag">Embedded C</span>
+              <span class="tag">Relay Module</span>
+            </div>
+            <div class="research-highlights">
+              <div class="r-hl"><span class="r-hl-dot" aria-hidden="true"></span>Real-time current anomaly detection
+                with calibrated threshold tuning</div>
+              <div class="r-hl"><span class="r-hl-dot" aria-hidden="true"></span>GPS-enabled theft location tracking for
+                utility infrastructure response</div>
+              <div class="r-hl"><span class="r-hl-dot" aria-hidden="true"></span>Automatic relay-controlled power
+                isolation on detection event</div>
+              <div class="r-hl"><span class="r-hl-dot" aria-hidden="true"></span>Functional hardware prototype validated
+                under test conditions</div>
+              <div class="r-hl"><span class="r-hl-dot" aria-hidden="true"></span>Published as IEEE conference paper —
+                peer reviewed</div>
+            </div>
           </div>
-          <span class="brand-name" style="font-size:14px">Tharani Ravi</span>
+
+          <!-- Patent -->
+          <div class="research-card reveal d1">
+            <div class="research-type patent">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:12px;height:12px"
+                aria-hidden="true">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              Patent Application · Accepted
+            </div>
+            <h3>Vigilant — Wearable-Free Fall Detection System Using Edge AI</h3>
+            <p>A patent-oriented research project proposing a privacy-preserving fall detection architecture for
+              elder-care environments. Submitted for patent consideration with application number granted. The work
+              encompasses full system architecture, technical feasibility analysis, and implementation planning —
+              validated as a novel contribution to edge AI healthcare.</p>
+            <div class="research-meta">
+              <span class="tag tag-orange">RPLIDAR A1</span>
+              <span class="tag tag-cyan">NVIDIA Jetson Nano</span>
+              <span class="tag tag-violet">OpenPose</span>
+              <span class="tag">YOLO</span>
+              <span class="tag">OpenCV</span>
+              <span class="tag">Edge AI</span>
+            </div>
+            <div class="research-highlights">
+              <div class="r-hl"><span class="r-hl-dot" aria-hidden="true"></span>Wearable-free detection eliminates
+                patient compliance barriers</div>
+              <div class="r-hl"><span class="r-hl-dot" aria-hidden="true"></span>Privacy-preserving camera activation —
+                idle until motion event triggered</div>
+              <div class="r-hl"><span class="r-hl-dot" aria-hidden="true"></span>On-device inference architecture — zero
+                cloud dependency</div>
+              <div class="r-hl"><span class="r-hl-dot" aria-hidden="true"></span>Emergency alert generation for
+                caregiver notification</div>
+              <div class="r-hl"><span class="r-hl-dot" aria-hidden="true"></span>Patent application submitted and
+                accepted — application number issued</div>
+            </div>
+          </div>
         </div>
-        <p>ECE graduate building a career in Data Engineering through Python. Developed analytics-ready data pipelines through ETL project work. IEEE-published. Based in Chennai.</p>
       </div>
-      <div>
-        <h4>Navigate</h4>
-        <nav class="footer-nav" aria-label="Footer navigation">
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#research">Research</a>
-          <a href="#experience">Experience</a>
-          <a href="#contact">Contact</a>
-        </nav>
+    </section>
+
+    <!-- ═══════ EXPERIENCE ═══════ -->
+    <section class="section-pad" id="experience" style="border-top:1px solid var(--border)">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow reveal"><span class="dot" aria-hidden="true"></span>Trajectory</span>
+          <h2 class="section-h reveal d1">A timeline of <em>building</em>.</h2>
+        </div>
+        <div class="timeline" role="list">
+          <div class="t-item reveal" role="listitem">
+            <div class="t-node" aria-hidden="true"></div>
+            <div class="t-meta">2026 · Present</div>
+            <div class="t-role">Data Analytics &amp; Python Developer Intern</div>
+            <div class="t-org"><strong>Kaar Technologies</strong> · Chennai, India</div>
+            <p class="t-desc">Working on Python-based analytics tooling and data pipeline development for enterprise
+              workflows. Contributed to internal dashboard development, built automation scripts for data processing
+              tasks, and worked on a defect-detection data pipeline integrating with robotic arm control endpoints.
+              Reduced a model retraining data preparation cycle from 4 days to under 6 hours through Python pipeline
+              optimisation.</p>
+            <div class="t-tags"><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Power
+                BI</span><span class="tag">Data Pipelines</span><span class="tag">Automation</span></div>
+          </div>
+          <div class="t-item reveal d3" role="listitem">
+            <div class="t-node" aria-hidden="true"></div>
+            <div class="t-meta">2022 · 2026</div>
+            <div class="t-role">B.E. Electronics &amp; Communication Engineering</div>
+            <div class="t-org">Electives in <strong>AI, Embedded Systems &amp; Signal Processing</strong> · CGPA 8.13
+            </div>
+            <p class="t-desc">Active in the Robotics Club and AI interest group. Multiple inter-departmental paper
+              presentations on embedded systems and IoT. Best Paper recognition at a national-level symposium conducted
+              at Bannari Amman Institute of Technology. ECE foundation underpins the systems-thinking approach applied
+              to software and data engineering work.</p>
+          </div>
+        </div>
       </div>
-      <div>
-        <h4>Elsewhere</h4>
-        <nav class="footer-nav" aria-label="External links">
-          <a href="https://www.linkedin.com/in/tharani-ravi-a79646263/" target="_blank" rel="noopener">LinkedIn ↗</a>
-          <a href="https://github.com/tharani165" target="_blank" rel="noopener">GitHub ↗</a>
-          <a href="mailto:tharaniravithara@gmail.com">Email ↗</a>
-        </nav>
+    </section>
+
+
+    <!-- ═══════ CERTIFICATIONS ═══════ -->
+    <section class="section-pad" id="certs" style="border-top:1px solid var(--border)">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow reveal"><span class="dot" aria-hidden="true"></span>Credentials</span>
+          <h2 class="section-h reveal d1">Certifications &amp; <em>training</em>.</h2>
+        </div>
+        <div class="cert-grid" id="certGrid"></div>
+      </div>
+    </section>
+
+    <!-- ═══════ FUN FACTS / BEYOND ENGINEERING ═══════ -->
+    <section class="section-pad" id="beyond" style="border-top:1px solid var(--border)">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow reveal"><span class="dot" aria-hidden="true"></span>Beyond Engineering</span>
+          <h2 class="section-h reveal d1">The human behind the <em>pipeline</em>.</h2>
+        </div>
+        <div class="fun-facts-grid">
+          <div class="fun-fact-card reveal">
+            <span class="ff-icon">☕</span>
+            <p class="ff-text">Pipeline debugging speed increases <strong>proportionally with coffee intake</strong>.
+              Current benchmarks are ongoing. Results are consistent.</p>
+          </div>
+          <div class="fun-fact-card reveal d1">
+            <span class="ff-icon">📊</span>
+            <p class="ff-text">Convinced that a well-named variable is worth <strong>three comments and a
+                diagram</strong>. Maintainable code is a form of kindness.</p>
+          </div>
+          <div class="fun-fact-card reveal d2">
+            <span class="ff-icon">📍</span>
+            <p class="ff-text">Based in <strong>Chennai</strong>, building data systems that solve real-world problems —
+              one pipeline, one dataset, one clean schema at a time.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════ FAILURE LOG / LESSONS LEARNED ═══════ -->
+    <section class="section-pad" id="lessons" style="border-top:1px solid var(--border)">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow reveal"><span class="dot" aria-hidden="true"></span>Lessons Learned</span>
+          <h2 class="section-h reveal d1">Things that <em>failed</em>, brilliantly.</h2>
+          <p class="section-sub reveal d2">Every data engineer has a graveyard of pipelines that ran perfectly in dev
+            and silently corrupted data in production. Here's mine.</p>
+        </div>
+        <div class="failure-log-wrap reveal">
+          <div class="failure-log-grid">
+            <div class="fl-item">
+              <div class="fl-num">01</div>
+              <div class="fl-body">
+                <div class="fl-title">The Pipeline That Loved Duplicates</div>
+                <div class="fl-desc">Forgot to implement idempotent upserts on the first pass. Re-ran the pipeline after
+                  a network timeout. Every row loaded twice.<br><br>Lesson: always design for safe re-runs from the
+                  start, not after discovering duplicates in production.</div>
+              </div>
+            </div>
+            <div class="fl-item">
+              <div class="fl-num">02</div>
+              <div class="fl-body">
+                <div class="fl-title">The Schema That Changed Overnight</div>
+                <div class="fl-desc">An API returned a new field without notice. Downstream Pandas transformations
+                  silently dropped it. The data loaded cleanly — with missing columns.<br><br> Lesson: always validate
+                  schema on
+                  every run, not just the first one.</div>
+              </div>
+            </div>
+            <div class="fl-item">
+              <div class="fl-num">03</div>
+              <div class="fl-body">
+                <div class="fl-title">The API That Liked Rate Limits</div>
+                <div class="fl-desc">Parallel fetches hit the API rate limit at 2am. No retry logic. The pipeline
+                  crashed silently and I woke up to empty tables.<br><br> Lesson: retry logic and backoff aren't
+                  optional in
+                  production ETL, they're the pipeline.</div>
+              </div>
+            </div>
+            <div class="fl-item">
+              <div class="fl-num">04</div>
+              <div class="fl-body">
+                <div class="fl-title">Logs That Said Nothing Useful</div>
+                <div class="fl-desc">Built a pipeline, added a single print statement for logging. A failure happened
+                  somewhere in the middle. No timestamp, no stage, no context.<br><br> Lesson: structured logging from
+                  the start
+                  pays back every time something goes wrong.</div>
+              </div>
+            </div>
+          </div>
+          <div class="fl-punchline">APIs lie. Schemas drift. Data is never as clean as it looks.<br>That's why I
+            <em>love</em> engineering.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════ CONTACT ═══════ -->
+    <section class="section-pad" id="contact" style="border-top:1px solid var(--border)">
+      <div class="container">
+        <div class="section-head" style="max-width:600px;margin-left:auto;margin-right:auto;text-align:center">
+          <span class="eyebrow reveal" style="margin:0 auto"><span class="dot" aria-hidden="true"></span>Get in
+            touch</span>
+          <h2 class="section-h reveal d1">Have an <em>interesting problem?</em></h2>
+          <p class="section-sub reveal d2" style="margin:18px auto 0">Let's build something useful, automate something
+            boring, or teach a machine something new.</p>
+        </div>
+        <div class="contact-inner reveal d1">
+          <div class="form-wrap">
+            <form id="contactForm" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" novalidate>
+              <div class="form-field"><input id="cf-name" name="name" type="text" placeholder="Your name" required
+                  autocomplete="name" /></div>
+              <div class="form-field"><input id="cf-email" name="email" type="email" placeholder="Email address"
+                  required autocomplete="email" /></div>
+              <div class="form-field"><input id="cf-subject" name="subject" type="text" placeholder="Subject"
+                  required /></div>
+              <div class="form-field"><textarea id="cf-message" name="message" placeholder="Message"
+                  required></textarea></div>
+              <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M22 2 11 13M22 2l-7 20-4-9-9-4z" />
+                </svg>
+                Send Message
+              </button>
+              <div class="form-note" id="formNote" aria-live="polite"><span class="form-note-dot"
+                  aria-hidden="true"></span>Usually replies within 24h · IST</div>
+            </form>
+          </div>
+          <div class="contact-aside">
+            <div class="contact-info-card">
+              <h3>Let's talk</h3>
+              <p>Internships, collaborations, or just a chat about computer vision over filter coffee — I'm in. Whether
+                it's a weird hardware project, a healthcare automation idea, or a problem that needs an AI solution,
+                reach out.</p>
+            </div>
+            <div class="contact-links">
+              <a href="https://www.linkedin.com/in/tharani-ravi-a79646263/" target="_blank" rel="noopener"
+                class="contact-link" aria-label="LinkedIn profile">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z" />
+                </svg>
+                <span class="cl-label">LinkedIn</span>
+                <span class="cl-val">tharani-ravi ↗</span>
+              </a>
+              <a href="https://github.com/tharani165" target="_blank" rel="noopener" class="contact-link"
+                aria-label="GitHub profile">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.5-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3" />
+                </svg>
+                <span class="cl-label">GitHub</span>
+                <span class="cl-val">github.com/tharani ↗</span>
+              </a>
+              <a href="mailto:tharaniravithara@gmail.com" class="contact-link" aria-label="Send email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <rect x="3" y="5" width="18" height="14" rx="2" />
+                  <path d="m3 7 9 6 9-6" />
+                </svg>
+                <span class="cl-label">Email</span>
+                <span class="cl-val">tharaniravithara@gmail.com</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════ FOOTER ═══════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand" style="align-items:center">
+            <div class="brand-icon" style="width:30px;height:30px;border-radius:8px" aria-hidden="true">
+              <svg viewBox="0 0 24 24" style="width:16px;height:16px">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+              </svg>
+            </div>
+            <span class="brand-name" style="font-size:14px">Tharani Ravi</span>
+          </div>
+          <p>ECE graduate building a career in Data Engineering through Python. Developed analytics-ready data pipelines
+            through ETL project work. IEEE-published. Based in Chennai.</p>
+        </div>
+        <div>
+          <h4>Navigate</h4>
+          <nav class="footer-nav" aria-label="Footer navigation">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#research">Research</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+        <div>
+          <h4>Elsewhere</h4>
+          <nav class="footer-nav" aria-label="External links">
+            <a href="https://www.linkedin.com/in/tharani-ravi-a79646263/" target="_blank" rel="noopener">LinkedIn ↗</a>
+            <a href="https://github.com/tharani165" target="_blank" rel="noopener">GitHub ↗</a>
+            <a href="mailto:tharaniravithara@gmail.com">Email ↗</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 THARANI RAVI · CHENNAI, INDIA</span>
+        <span>BUILT WITH <span class="heart" aria-hidden="true">●</span> PASSION &amp; PRECISION</span>
       </div>
     </div>
-    <div class="footer-bottom">
-      <span>© 2026 THARANI RAVI · CHENNAI, INDIA</span>
-      <span>BUILT WITH <span class="heart" aria-hidden="true">●</span> PASSION &amp; PRECISION</span>
+  </footer>
+
+  <!-- MODAL -->
+  <div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal">
+      <div class="modal-hero" id="modalHero"></div>
+      <button class="modal-close" id="modalClose" aria-label="Close project detail">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+          <path d="M18 6 6 18M6 6l12 12" />
+        </svg>
+      </button>
+      <div class="modal-body" id="modalBody"></div>
     </div>
   </div>
-</footer>
 
-<!-- MODAL -->
-<div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-  <div class="modal">
-    <div class="modal-hero" id="modalHero"></div>
-    <button class="modal-close" id="modalClose" aria-label="Close project detail">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
-    </button>
-    <div class="modal-body" id="modalBody"></div>
-  </div>
-</div>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
