@@ -553,12 +553,13 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal()
 
 /* â”€â”€ CERTIFICATIONS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 const certs = [
-  { org: 'Google', title: 'Data Analytics Professional Certificate', date: 'Feb 2025' },
-  { org: 'IBM', title: 'Python for Data Science & AI', date: 'Nov 2024' },
-  { org: 'Coursera', title: 'SQL for Data Science', date: 'Aug 2024' },
-  { org: 'Microsoft', title: 'Power BI Data Analyst Associate', date: 'May 2024' },
-  { org: 'AWS', title: 'Cloud Practitioner Essentials', date: 'Mar 2024' },
-  { org: 'NPTEL', title: 'IoT & Embedded Systems', date: 'Dec 2023' }
+  { org: 'Microsoft', title: 'Fabric Data Engineer Associate (DP-700)', date: 'Sep 2026' },
+  { org: 'Microsoft', title: 'Agentic AI Business Solutions Architect (AB-100)', date: 'Sep 2026' },
+  { org: 'Microsoft', title: 'AI Agent Builder Associate (AB-620)', date: 'Sep 2026' },
+  { org: 'Anthropic', title: 'Anthropic AI Fluency & Claude AI Learning Path ', date: 'May 2026' },
+  { org: 'Anthropic', title: 'Claude with Amazon Bedrock', date: 'May 2026' },
+  { org: 'Forage ', title: 'Deloitte Data Analytics Job Simulation', date: 'May 2026' }
+  
 ];
 const certGrid = document.getElementById('certGrid');
 const badgeSVG = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="m9 14-2 8 5-3 5 3-2-8"/></svg>`;
