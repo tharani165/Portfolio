@@ -572,7 +572,7 @@ certs.forEach((c, i) => {
       <span class="cert-badge">${badgeSVG}</span>
     </div>
     <h4>${c.title}</h4>
-    <div class="cert-date">Issued Â· ${c.date.toUpperCase()}</div>`;
+    <div class="cert-date">Issued · ${c.date.toUpperCase()}</div>`;
   certGrid.appendChild(el);
   revObs.observe(el);
 });
